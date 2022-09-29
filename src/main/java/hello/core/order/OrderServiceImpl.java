@@ -13,8 +13,8 @@ public class OrderServiceImpl implements OrderService{
     private final DiscountPolicy discountPolicy;
 
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
-        this.memberRepository = memberRepository;
-        this.discountPolicy = discountPolicy;
+        this.memberRepository = memberRepository; // 참조값이 들어간다.
+        this.discountPolicy = discountPolicy; // 참조값이 들어간다.
     }
 
     @Override
